@@ -1,0 +1,61 @@
+import React, { useEffect } from 'react'
+import Helmet from 'react-helmet';
+import { useDispatch, useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
+import { decPage, getPersons, incPage, storeCurrentPage } from '../../Redux/PersonSlice.js';
+
+export default function Persons() {
+  let { persons, currentPage } = useSelector(({ person }) => person);
+  let dispatch = useDispatch();
+  let nums = new Array(10).fill(0);
+
+  async function getPersonsF(page) {
+    let { payload } = await dispatch(getPersons(page));
+  }
+
+  function decrease() {
+    dispatch(decPage());
+    currentPage--;
+    getPersonsF(currentPage);
+  }
+
+  function increase() {
+
+    dispatch(incPage());
+    currentPage++;
+    getPersonsF(currentPage);
+  }
+
+  useEffect(() => {
+    getPersonsF(1);
+  }, [])
+
+  return (
+    <>
+      <Helmet>
+        <title>{`Noxi - Persons`}</title>
+      </Helmet>
+      <div className="container my-5 py-5">
+        {persons ? <div className="row">
+          {persons?.map((person) => <div key={person.id} className="col-md-3 col-6">
+            <Link className='text-decoration-none text-white' to={`/itemdetails/person/${person.id}`}>
+              <div className='position-relative my-3'>
+                <img src={`https://image.tmdb.org/t/p/w500` + person.profile_path} className='w-100' alt={person.title} loading='lazy' />
+                <h3 className='h5'>{person.name}</h3>
+              </div>
+            </Link>
+          </div>)}
+        </div> : <div className='container vh-100 d-flex justify-content-center align-items-center'><div class="spinner-border text-primary p-5" role="status"></div></div>}
+
+        <nav>
+          <ul className="pagination justify-content-center my-5">
+            <li className="page-item"><Link onClick={decrease} className="page-link text-bg-primary shadow-none">Previous</Link></li>
+            {nums.map((page, index) => <li key={index} onClick={() => { getPersonsF(index + 1); dispatch(storeCurrentPage(index + 1)) }} className="page-item"><Link className={`page-link text-bg-primary shadow-none ${currentPage === index + 1 ? 'page-active' : ''}`}>{index + 1}</Link></li>
+            )}
+            <li className="page-item"><Link onClick={increase} className="page-link text-bg-primary shadow-none">Next</Link></li>
+          </ul>
+        </nav>
+      </div>
+    </>
+  )
+}

@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Noxi.git/static/css/main.9b0c0e5d.css",
-    "main.js": "/Noxi.git/static/js/main.c5933950.js",
-    "static/js/787.1de2be9c.chunk.js": "/Noxi.git/static/js/787.1de2be9c.chunk.js",
-    "static/media/fa-solid-900.ttf": "/Noxi.git/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
-    "static/media/fa-brands-400.ttf": "/Noxi.git/static/media/fa-brands-400.150de8eaa454d669c405.ttf",
-    "static/media/fa-solid-900.woff2": "/Noxi.git/static/media/fa-solid-900.bb975c966c37455a1bc3.woff2",
-    "static/media/fa-brands-400.woff2": "/Noxi.git/static/media/fa-brands-400.e033a13ee751afc1860c.woff2",
-    "static/media/fa-regular-400.ttf": "/Noxi.git/static/media/fa-regular-400.d87474231f4192884802.ttf",
-    "static/media/fa-regular-400.woff2": "/Noxi.git/static/media/fa-regular-400.3223dc79c1adee56370b.woff2",
-    "static/media/fa-v4compatibility.ttf": "/Noxi.git/static/media/fa-v4compatibility.0e3a648be390bd8cb094.ttf",
-    "static/media/fa-v4compatibility.woff2": "/Noxi.git/static/media/fa-v4compatibility.68577e40f3e70067b5da.woff2",
-    "index.html": "/Noxi.git/index.html",
-    "main.9b0c0e5d.css.map": "/Noxi.git/static/css/main.9b0c0e5d.css.map",
-    "main.c5933950.js.map": "/Noxi.git/static/js/main.c5933950.js.map",
-    "787.1de2be9c.chunk.js.map": "/Noxi.git/static/js/787.1de2be9c.chunk.js.map"
+    "main.css": "/Noxi/static/css/main.6cb1d984.css",
+    "main.js": "/Noxi/static/js/main.e0fb664d.js",
+    "static/js/787.1de2be9c.chunk.js": "/Noxi/static/js/787.1de2be9c.chunk.js",
+    "static/media/fa-solid-900.ttf": "/Noxi/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
+    "static/media/fa-brands-400.ttf": "/Noxi/static/media/fa-brands-400.150de8eaa454d669c405.ttf",
+    "static/media/fa-solid-900.woff2": "/Noxi/static/media/fa-solid-900.bb975c966c37455a1bc3.woff2",
+    "static/media/fa-brands-400.woff2": "/Noxi/static/media/fa-brands-400.e033a13ee751afc1860c.woff2",
+    "static/media/fa-regular-400.ttf": "/Noxi/static/media/fa-regular-400.d87474231f4192884802.ttf",
+    "static/media/fa-regular-400.woff2": "/Noxi/static/media/fa-regular-400.3223dc79c1adee56370b.woff2",
+    "static/media/fa-v4compatibility.ttf": "/Noxi/static/media/fa-v4compatibility.0e3a648be390bd8cb094.ttf",
+    "static/media/fa-v4compatibility.woff2": "/Noxi/static/media/fa-v4compatibility.68577e40f3e70067b5da.woff2",
+    "index.html": "/Noxi/index.html",
+    "main.6cb1d984.css.map": "/Noxi/static/css/main.6cb1d984.css.map",
+    "main.e0fb664d.js.map": "/Noxi/static/js/main.e0fb664d.js.map",
+    "787.1de2be9c.chunk.js.map": "/Noxi/static/js/787.1de2be9c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9b0c0e5d.css",
-    "static/js/main.c5933950.js"
+    "static/css/main.6cb1d984.css",
+    "static/js/main.e0fb664d.js"
   ]
 }

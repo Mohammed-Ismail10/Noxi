@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
 import Layout from './Components/Layout/Layout.jsx';
 import Home from './Components/Home/Home.jsx';
 import Register from './Components/Register/Register.jsx';
@@ -23,7 +23,7 @@ function App() {
     <>
       <Provider store={store}>
         <ToastContainer position="top-left" theme="dark" />
-        <BrowserRouter>
+        <HashRouter>
           <Routes>
             <Route path='/' element={<Layout />}>
               <Route index element={<ProtectedRoute><Home /></ProtectedRoute>} />
@@ -36,7 +36,7 @@ function App() {
               <Route path='*' element={<NotFound />} />
             </Route>
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </Provider>
     </>
   );
